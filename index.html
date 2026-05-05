@@ -233,9 +233,124 @@
         }
 
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            .formula-grid { grid-template-columns: 1fr; }
-            .subject-tabs { top: 120px; }
+            header {
+                position: relative;
+                padding: 1.2rem 0.8rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+
+            header p {
+                font-size: 0.85rem;
+            }
+
+            .search-box {
+                max-width: 100%;
+                padding: 0 0.5rem;
+                margin-top: 0.8rem;
+            }
+
+            .search-box input {
+                padding: 10px 16px;
+                font-size: 0.95rem;
+                border-radius: 20px;
+            }
+
+            .subject-tabs {
+                position: relative;
+                top: auto;
+                padding: 0.75rem 0.5rem;
+                gap: 8px;
+            }
+
+            .tab-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+                border-radius: 16px;
+                flex: 1 1 auto;
+                min-width: 100px;
+            }
+
+            .container {
+                padding: 1rem 0.75rem;
+            }
+
+            .topic-header {
+                padding: 0.85rem 1rem;
+            }
+
+            .topic-header h2 {
+                font-size: 1rem;
+                gap: 8px;
+            }
+
+            .topic-icon {
+                font-size: 1.2rem;
+            }
+
+            .toggle-icon {
+                font-size: 1rem;
+            }
+
+            .topic-content {
+                padding: 0.75rem 1rem;
+            }
+
+            .formula-grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+
+            .formula-item {
+                padding: 0.85rem;
+                font-size: 0.9rem;
+            }
+
+            .formula-item h4 {
+                font-size: 0.8rem;
+            }
+
+            .formula-item .katex-display {
+                overflow-x: auto;
+                font-size: 0.85em;
+            }
+
+            .no-results {
+                padding: 2rem 1rem;
+                font-size: 1rem;
+            }
+
+            footer {
+                padding: 1.5rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.25rem;
+            }
+
+            .tab-btn {
+                padding: 7px 12px;
+                font-size: 0.8rem;
+                min-width: 80px;
+            }
+
+            .topic-header h2 {
+                font-size: 0.9rem;
+            }
+
+            .formula-item {
+                font-size: 0.85rem;
+            }
+
+            .formula-item .katex-display {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
