@@ -720,6 +720,491 @@
                     </div>
                 </div>
             </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 1: Sets</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Set Operations</h4>
+                            <p>$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$. $$n(A \cup B \cup C) = n(A)+n(B)+n(C)-n(A\cap B)-n(B\cap C)-n(C\cap A)+n(A\cap B\cap C)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Power Set & De Morgan's</h4>
+                            <p>$$P(A)$$ has $$2^{n(A)}$$ subsets. $$(A \cap B)' = A' \cup B'$$. $$(A \cup B)' = A' \cap B'$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Cartesian Product</h4>
+                            <p>$$n(A \times B) = n(A) \cdot n(B)$$. $$A \times B \neq B \times A$$ (unless A=B)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 2: Relations & Functions</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Types of Relations</h4>
+                            <p>Reflexive: $$(a,a) \in R \,\forall a$$. Symmetric: $$(a,b) \in R \Rightarrow (b,a) \in R$$. Transitive: $$(a,b),(b,c) \in R \Rightarrow (a,c) \in R$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Functions</h4>
+                            <p>$$f: A \to B$$ is one-one if $$f(x_1)=f(x_2) \Rightarrow x_1=x_2$$. Onto if every element of B has a pre-image. Bijective = one-one + onto</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Composition</h4>
+                            <p>$$(fog)(x) = f(g(x))$$. $$(gof)(x) = g(f(x))$$. Generally $$fog \neq gof$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Inverse Function</h4>
+                            <p>Exists iff f is bijective. $$f^{-1}(y) = x \Leftrightarrow f(x) = y$$. Domain of $$f^{-1}$$ = Range of f</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 3: Trigonometric Functions</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>General Solutions</h4>
+                            <p>$$\sin\theta = \sin\alpha \Rightarrow \theta = n\pi + (-1)^n\alpha$$. $$\cos\theta = \cos\alpha \Rightarrow \theta = 2n\pi \pm \alpha$$. $$\tan\theta = \tan\alpha \Rightarrow \theta = n\pi + \alpha$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Allied Angles</h4>
+                            <p>$$\sin(90°-\theta) = \cos\theta$$. $$\sin(90°+\theta) = \cos\theta$$. $$\sin(180°-\theta) = \sin\theta$$. $$\sin(180°+\theta) = -\sin\theta$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Sum-to-Product</h4>
+                            <p>$$\sin C + \sin D = 2\sin\frac{C+D}{2}\cos\frac{C-D}{2}$$. $$\cos C + \cos D = 2\cos\frac{C+D}{2}\cos\frac{C-D}{2}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Triangle Identities</h4>
+                            <p>$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$$. $$\cos A = \frac{b^2+c^2-a^2}{2bc}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 4: Complex Numbers</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Polar & Euler Form</h4>
+                            <p>$$z = r(\cos\theta + i\sin\theta) = re^{i\theta}$$. $$|z| = \sqrt{a^2+b^2}$$, $$\arg(z) = \tan^{-1}\frac{b}{a}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>De Moivre's Theorem</h4>
+                            <p>$$(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$$. nth roots of unity: $$e^{i\frac{2\pi k}{n}}$$ for $$k=0,1,...,n-1$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Cube Roots of Unity</h4>
+                            <p>$$1, \omega, \omega^2$$ where $$\omega = e^{i\frac{2\pi}{3}}$$. $$1+\omega+\omega^2 = 0$$, $$\omega^3 = 1$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Triangle Inequality</h4>
+                            <p>$$|z_1 + z_2| \leq |z_1| + |z_2|$$. $$|z_1 - z_2| \geq ||z_1| - |z_2||$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 6: Permutations & Combinations</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Fundamental Formulas</h4>
+                            <p>$$^nP_r = \frac{n!}{(n-r)!}$$. $$^nC_r = \frac{n!}{r!(n-r)!}$$. $$^nC_r = {}^nC_{n-r}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Important Identities</h4>
+                            <p>$$^nC_r + {}^nC_{r-1} = {}^{n+1}C_r$$. $$r \cdot {}^nC_r = n \cdot {}^{n-1}C_{r-1}$$. $$\sum_{r=0}^{n} {}^nC_r = 2^n$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Special Cases</h4>
+                            <p>Circular permutation (distinct) = $$(n-1)!$$. Necklace = $$(n-1)!/2$$. Divisors of $$N = p_1^{a_1}p_2^{a_2}...$$ = $$(a_1+1)(a_2+1)...$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Selection</h4>
+                            <p>Selecting r from n with k alike = coefficient of $$x^r$$ in $$(1+x+...+x^k)(1+x)^m$$. At least one of each type = stars and bars</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 7: Binomial Theorem</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Expansion & General Term</h4>
+                            <p>$$(a+b)^n = \sum_{r=0}^{n} {}^nC_r a^{n-r}b^r$$. $$T_{r+1} = {}^nC_r a^{n-r}b^r$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Sum of Coefficients</h4>
+                            <p>$$C_0 + C_1 + ... + C_n = 2^n$$. $$C_0 + C_2 + C_4 + ... = 2^{n-1}$$. $$C_1 + C_3 + ... = 2^{n-1}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Important Sums</h4>
+                            <p>$$\sum r \cdot C_r = n \cdot 2^{n-1}$$. $$\sum r^2 \cdot C_r = n(n+1)2^{n-2}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Greatest Term</h4>
+                            <p>$$T_{r+1}$$ is greatest when $$r = \left\lfloor\frac{(n+1)|b|}{|a|+|b|}\right\rfloor$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 8: Sequences & Series</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Arithmetic Progression</h4>
+                            <p>$$a_n = a + (n-1)d$$. $$S_n = \frac{n}{2}[2a+(n-1)d] = \frac{n}{2}(a+l)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Geometric Progression</h4>
+                            <p>$$a_n = ar^{n-1}$$. $$S_n = a\frac{1-r^n}{1-r}$$ ($$r \neq 1$$). $$S_\infty = \frac{a}{1-r}$$ ($$|r|<1$$)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Special Sums</h4>
+                            <p>$$\sum n = \frac{n(n+1)}{2}$$. $$\sum n^2 = \frac{n(n+1)(2n+1)}{6}$$. $$\sum n^3 = \left[\frac{n(n+1)}{2}\right]^2$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>AM-GM-HM</h4>
+                            <p>$$AM \geq GM \geq HM$$. $$GM^2 = AM \times HM$$ (for two numbers). For equal numbers, AM = GM = HM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 9: Straight Lines</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Forms of Line</h4>
+                            <p>Slope-intercept: $$y = mx + c$$. Intercept: $$\frac{x}{a} + \frac{y}{b} = 1$$. Normal: $$x\cos\alpha + y\sin\alpha = p$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Angle & Distance</h4>
+                            <p>$$\tan\theta = \left|\frac{m_1-m_2}{1+m_1m_2}\right|$$. Distance from $$(x_1,y_1)$$ to $$ax+by+c=0$$: $$\frac{|ax_1+by_1+c|}{\sqrt{a^2+b^2}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Concurrency & Collinearity</h4>
+                            <p>Three lines concurrent if $$\begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = 0$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Family of Lines</h4>
+                            <p>Through intersection of $$L_1=0$$ and $$L_2=0$$: $$L_1 + \lambda L_2 = 0$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 10: Conic Sections</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Parabola $$y^2 = 4ax$$</h4>
+                            <p>Focus: $$(a,0)$$. Directrix: $$x = -a$$. LR = $$4a$$. Tangent at $$(x_1,y_1)$$: $$yy_1 = 2a(x+x_1)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Ellipse $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$$</h4>
+                            <p>$$e = \sqrt{1-\frac{b^2}{a^2}}$$. Foci: $$(\pm ae, 0)$$. LR = $$\frac{2b^2}{a}$$. Sum of focal distances = $$2a$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Hyperbola $$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$$</h4>
+                            <p>$$e = \sqrt{1+\frac{b^2}{a^2}}$$. Asymptotes: $$y = \pm\frac{b}{a}x$$. LR = $$\frac{2b^2}{a}$$. Difference of focal distances = $$2a$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Rectangular Hyperbola</h4>
+                            <p>$$xy = c^2$$ or $$x^2-y^2 = a^2$$. Eccentricity = $$\sqrt{2}$$. Asymptotes perpendicular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 12: Limits & Derivatives</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Standard Limits</h4>
+                            <p>$$\lim_{x\to 0}\frac{\sin x}{x} = 1$$. $$\lim_{x\to 0}\frac{\tan x}{x} = 1$$. $$\lim_{x\to 0}\frac{e^x-1}{x} = 1$$. $$\lim_{x\to 0}\frac{\ln(1+x)}{x} = 1$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Exponential & Log Limits</h4>
+                            <p>$$\lim_{x\to 0}(1+x)^{1/x} = e$$. $$\lim_{x\to 0}\frac{a^x-1}{x} = \ln a$$. $$\lim_{x\to 0}\frac{(1+x)^n-1}{x} = n$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Derivative Definition</h4>
+                            <p>$$f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$$. Product rule: $$(uv)' = u'v + uv'$$. Quotient: $$\left(\frac{u}{v}\right)' = \frac{u'v-uv'}{v^2}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-3: Matrices</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Matrix Operations</h4>
+                            <p>$$(A+B)' = A' + B'$$. $$(kA)' = kA'$$. $$(AB)' = B'A'$$. $$(A')' = A$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Symmetric & Skew-Symmetric</h4>
+                            <p>Symmetric: $$A' = A$$. Skew-symmetric: $$A' = -A$$. Every square matrix = symmetric + skew-symmetric</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Inverse</h4>
+                            <p>$$A^{-1} = \frac{1}{|A|} \text{adj}(A)$$. $$(AB)^{-1} = B^{-1}A^{-1}$$. $$(A')^{-1} = (A^{-1})'$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Elementary Operations</h4>
+                            <p>$$R_i \leftrightarrow R_j$$, $$R_i \to kR_i$$, $$R_i \to R_i + kR_j$$. Same for columns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-4: Determinants</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Properties</h4>
+                            <p>$$|AB| = |A||B|$$. $$|kA| = k^n|A|$$. $$|A'| = |A|$$. Interchanging rows/columns: sign changes</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Adjoint & Inverse</h4>
+                            <p>$$A \cdot \text{adj}(A) = |A|I$$. If $$|A| \neq 0$$: $$A^{-1} = \frac{\text{adj}(A)}{|A|}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Area & Cramer's Rule</h4>
+                            <p>Area = $$\frac{1}{2}\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}$$. Cramer's: $$x = \frac{D_x}{D}$$, $$y = \frac{D_y}{D}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-5 & 6: Calculus</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Standard Derivatives</h4>
+                            <p>$$\frac{d}{dx}x^n = nx^{n-1}$$. $$\frac{d}{dx}\sin x = \cos x$$. $$\frac{d}{dx}\ln x = \frac{1}{x}$$. $$\frac{d}{dx}e^x = e^x$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Mean Value Theorems</h4>
+                            <p>Rolle's: f continuous [a,b], differentiable (a,b), f(a)=f(b) → ∃c: f'(c)=0. LMVT: f'(c) = [f(b)-f(a)]/(b-a)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Monotonicity & Extrema</h4>
+                            <p>f'(x) > 0 → increasing. f'(x) < 0 → decreasing. f'(c)=0 and f''(c)>0 → local min. f''(c)<0 → local max</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Tangent & Normal</h4>
+                            <p>Tangent at $$(x_1,y_1)$$: $$y-y_1 = f'(x_1)(x-x_1)$$. Normal: slope = $$-1/f'(x_1)$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-7 & 8: Integrals</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Standard Integrals</h4>
+                            <p>$$\int x^n dx = \frac{x^{n+1}}{n+1}$$ ($$n \neq -1$$). $$\int \frac{1}{x}dx = \ln|x|$$. $$\int e^x dx = e^x$$. $$\int \sin x dx = -\cos x$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Important Formulas</h4>
+                            <p>$$\int e^x[f(x)+f'(x)]dx = e^x f(x)$$. $$\int \frac{f'(x)}{f(x)}dx = \ln|f(x)|$$. $$\int \frac{1}{x^2+a^2}dx = \frac{1}{a}\tan^{-1}\frac{x}{a}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Definite Integral Properties</h4>
+                            <p>$$\int_a^b f(x)dx = \int_a^b f(a+b-x)dx$$. $$\int_0^a f(x)dx = \int_0^a f(a-x)dx$$. $$\int_0^{2a} f(x)dx = 2\int_0^a f(x)dx$$ if f(2a-x)=f(x)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Walli's Formula</h4>
+                            <p>$$\int_0^{\pi/2} \sin^m x \cos^n x dx$$. If m,n even: use reduction. If either odd: substitution method.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Leibniz Rule</h4>
+                            <p>$$\frac{d}{dx}\int_{u(x)}^{v(x)} f(t)dt = f(v(x))v'(x) - f(u(x))u'(x)$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-9: Differential Equations</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Formation & Types</h4>
+                            <p>Order = highest derivative. Degree = power of highest derivative (when polynomial in derivatives). Eliminate arbitrary constants to form DE</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Variable Separable</h4>
+                            <p>$$f(x)dx = g(y)dy$$. Integrate both sides. Homogeneous: substitute $$y = vx$$, then separate</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Linear First Order</h4>
+                            <p>$$\frac{dy}{dx} + P(x)y = Q(x)$$. IF = $$e^{\int P dx}$$. Solution: $$y \cdot IF = \int Q \cdot IF \, dx$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-10: Vector Algebra</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Dot & Cross Product</h4>
+                            <p>$$\vec{a} \cdot \vec{b} = |a||b|\cos\theta$$. $$\vec{a} \times \vec{b} = |a||b|\sin\theta \, \hat{n}$$. $$|\vec{a} \times \vec{b}| =$$ area of parallelogram</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Scalar Triple Product</h4>
+                            <p>$$[\vec{a}\ \vec{b}\ \vec{c}] = \vec{a} \cdot (\vec{b} \times \vec{c})$$. Volume of parallelepiped = $$|[abc]|$$. Coplanar if $$[abc] = 0$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Vector Triple Product</h4>
+                            <p>$$\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a}\cdot\vec{c})\vec{b} - (\vec{a}\cdot\vec{b})\vec{c}$$. $$(\vec{a} \times \vec{b}) \times \vec{c} = (\vec{a}\cdot\vec{c})\vec{b} - (\vec{b}\cdot\vec{c})\vec{a}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Section Formula</h4>
+                            <p>Internal: $$\vec{r} = \frac{m\vec{b}+n\vec{a}}{m+n}$$. External: $$\vec{r} = \frac{m\vec{b}-n\vec{a}}{m-n}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-11: 3D Geometry</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Line & Plane</h4>
+                            <p>Line: $$\vec{r} = \vec{a} + \lambda\vec{b}$$. Plane: $$\vec{r}\cdot\vec{n} = d$$. Angle between line and plane: $$\sin\theta = \frac{|\vec{b}\cdot\vec{n}|}{|b||n|}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Distance Formulas</h4>
+                            <p>Point to plane: $$\frac{|ax_1+by_1+cz_1+d|}{\sqrt{a^2+b^2+c^2}}$$. Skew lines: $$d = \frac{|(\vec{a}_2-\vec{a}_1)\cdot(\vec{b}_1\times\vec{b}_2)|}{|\vec{b}_1\times\vec{b}_2|}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Plane through Intersection</h4>
+                            <p>$$(\vec{r}\cdot\vec{n}_1 - d_1) + \lambda(\vec{r}\cdot\vec{n}_2 - d_2) = 0$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-12: Linear Programming</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Corner Point Method</h4>
+                            <p>Optimal value of objective function Z = ax + by occurs at one of the corner points of the feasible region.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Feasible Region</h4>
+                            <p>Graph each inequality. Find intersection points. Test each corner point in Z. If region is unbounded, check if optimal value is attained.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-13: Probability</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Random Variable</h4>
+                            <p>$$P(X = x_i) = p_i$$. $$\sum p_i = 1$$. Mean = $$\sum x_i p_i$$. Variance = $$\sum x_i^2 p_i - (\sum x_i p_i)^2$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Binomial Distribution</h4>
+                            <p>$$P(X=r) = {}^nC_r p^r q^{n-r}$$. Mean = $$np$$, Variance = $$npq$$, SD = $$\sqrt{npq}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Bayes' Theorem</h4>
+                            <p>$$P(E_i|A) = \frac{P(E_i)P(A|E_i)}{\sum_{j}P(E_j)P(A|E_j)}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- PHYSICS -->
@@ -1328,6 +1813,671 @@
                         <div class="formula-item">
                             <h4>Communication Systems</h4>
                             <p>Modulation needed to reduce antenna size and avoid mixing. AM varies amplitude; FM varies frequency. Range ∝ $$h^{1/2}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 1: Units and Measurements</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Dimensional Analysis</h4>
+                            <p>$$[F] = [MLT^{-2}]$$, $$[W] = [ML^2T^{-2}]$$, $$[P] = [ML^{-1}T^{-3}]$$, $$[E] = [ML^2T^{-2}]$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Significant Figures Rules</h4>
+                            <p>All non-zero digits are significant. Zeros between non-zero digits are significant. Trailing zeros in decimal are significant.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Astronomical Conversions</h4>
+                            <p>1 AU = $$1.496 \times 10^{11}$$ m. 1 ly = $$9.46 \times 10^{15}$$ m. 1 parsec = $$3.086 \times 10^{16}$$ m = 3.26 ly</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Least Count</h4>
+                            <p>$$LC = \frac{\text{Pitch}}{\text{Number of divisions on circular scale}}$$ (for screw gauge)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 2 & 3: Kinematics</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Equations of Motion</h4>
+                            <p>$$v = u + at$$, $$s = ut + \frac{1}{2}at^2$$, $$v^2 = u^2 + 2as$$, $$s_n = u + \frac{a}{2}(2n-1)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Projectile Motion</h4>
+                            <p>$$T = \frac{2u\sin\theta}{g}$$, $$H = \frac{u^2\sin^2\theta}{2g}$$, $$R = \frac{u^2\sin2\theta}{g}$$, $$R_{max} = \frac{u^2}{g}$$ at $$\theta = 45°$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Relative Velocity</h4>
+                            <p>$$\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$$. For rain-man problem: $$\tan\theta = \frac{v_{rain}}{v_{man}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Circular Motion</h4>
+                            <p>$$a_c = \frac{v^2}{r} = \omega^2 r$$, $$v = \omega r$$, $$T = \frac{2\pi}{\omega}$$, $$f = \frac{\omega}{2\pi}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 4: Laws of Motion</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Newton's Laws</h4>
+                            <p>First: Inertia. Second: $$F = ma = \frac{dp}{dt}$$. Third: $$F_{12} = -F_{21}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Friction</h4>
+                            <p>$$f_s \leq \mu_s N$$, $$f_k = \mu_k N$$. Angle of friction: $$\tan\theta = \mu$$. Angle of repose = angle of friction</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Connected Bodies</h4>
+                            <p>Atwood machine: $$a = \frac{(m_1-m_2)g}{m_1+m_2}$$, $$T = \frac{2m_1m_2g}{m_1+m_2}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Pseudo Force</h4>
+                            <p>$$F_{pseudo} = -ma_0$$ in non-inertial frame. Centrifugal force = $$m\omega^2r$$ outward in rotating frame</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Impulse</h4>
+                            <p>$$J = F\Delta t = \Delta p = m(v-u)$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 5: Work, Energy and Power</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Work & Power</h4>
+                            <p>$$W = Fd\cos\theta$$, $$P = \frac{W}{t} = Fv$$ (constant force). Power = $$\vec{F} \cdot \vec{v}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Kinetic & Potential Energy</h4>
+                            <p>$$KE = \frac{1}{2}mv^2 = \frac{p^2}{2m}$$, $$PE_{grav} = mgh$$, $$PE_{spring} = \frac{1}{2}kx^2$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Work-Energy Theorem</h4>
+                            <p>$$W_{net} = \Delta KE = KE_f - KE_i$$. Valid for all forces.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Collisions</h4>
+                            <p>Elastic: $$e = 1$$, KE conserved. Inelastic: $$0 < e < 1$$. Perfectly inelastic: $$e = 0$$, bodies stick. $$e = \frac{v_2-v_1}{u_1-u_2}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>1D Elastic Collision</h4>
+                            <p>$$v_1 = \frac{(m_1-m_2)u_1 + 2m_2u_2}{m_1+m_2}$$, $$v_2 = \frac{(m_2-m_1)u_2 + 2m_1u_1}{m_1+m_2}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 6: Rotational Motion</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Rotational Kinematics</h4>
+                            <p>$$\omega = \omega_0 + \alpha t$$, $$\theta = \omega_0 t + \frac{1}{2}\alpha t^2$$, $$\omega^2 = \omega_0^2 + 2\alpha\theta$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Moment of Inertia Theorems</h4>
+                            <p>Parallel axis: $$I = I_{cm} + Md^2$$. Perpendicular axis: $$I_z = I_x + I_y$$ (planar body)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Torque & Angular Momentum</h4>
+                            <p>$$\tau = I\alpha = rF\sin\theta$$. $$L = I\omega = r \times p$$. $$\tau = \frac{dL}{dt}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Rolling Without Slipping</h4>
+                            <p>$$v = R\omega$$, $$a = R\alpha$$. KE = $$\frac{1}{2}mv^2 + \frac{1}{2}I\omega^2 = \frac{1}{2}mv^2\left(1+\frac{k^2}{R^2}\right)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Conservation of Angular Momentum</h4>
+                            <p>If $$\tau_{ext} = 0$$, then $$L = I\omega =$$ constant. $$I_1\omega_1 = I_2\omega_2$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 7: Gravitation</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Newton's Law & Field</h4>
+                            <p>$$F = G\frac{m_1m_2}{r^2}$$, $$g = \frac{GM}{R^2}$$, $$V = -\frac{GM}{r}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Variation of g</h4>
+                            <p>Height: $$g' = g\left(1-\frac{2h}{R}\right)$$ for $$h \ll R$$. Depth: $$g' = g\left(1-\frac{d}{R}\right)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Satellite Motion</h4>
+                            <p>$$v_o = \sqrt{\frac{GM}{r}}$$, $$T = 2\pi\sqrt{\frac{r^3}{GM}}$$, $$KE = \frac{GMm}{2r}$$, $$TE = -\frac{GMm}{2r}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Escape Velocity</h4>
+                            <p>$$v_e = \sqrt{\frac{2GM}{R}} = \sqrt{2gR}$$ ≈ 11.2 km/s for Earth. Independent of mass of body.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Kepler's Laws</h4>
+                            <p>First: Elliptical orbits. Second: $$\frac{dA}{dt} = \frac{L}{2m} =$$ constant. Third: $$T^2 \propto r^3$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 8 & 9: Solids & Fluids</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Elasticity</h4>
+                            <p>Stress = $$\frac{F}{A}$$, Strain = $$\frac{\Delta L}{L}$$, $$Y = \frac{\text{Stress}}{\text{Strain}}$$. Bulk modulus $$K = -V\frac{dP}{dV}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Fluid Pressure & Buoyancy</h4>
+                            <p>$$P = P_0 + \rho gh$$. Archimedes: $$F_B = \rho_{fluid} V_{sub} g$$. Apparent weight = True weight - Buoyant force</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Continuity & Bernoulli</h4>
+                            <p>$$A_1v_1 = A_2v_2$$. $$P + \frac{1}{2}\rho v^2 + \rho gh =$$ constant. Torricelli: $$v = \sqrt{2gh}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Viscosity & Surface Tension</h4>
+                            <p>Stokes' law: $$F = 6\pi\eta rv$$. Terminal velocity: $$v = \frac{2}{9}\frac{r^2(\rho-\sigma)g}{\eta}$$. Surface energy = $$T \times \Delta A$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Excess Pressure</h4>
+                            <p>Drop: $$\Delta P = \frac{2T}{r}$$. Bubble in air: $$\Delta P = \frac{4T}{r}$$. Capillary rise: $$h = \frac{2T\cos\theta}{r\rho g}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 10-12: Thermal Physics & KTG</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Thermal Expansion</h4>
+                            <p>Linear: $$\Delta L = \alpha L_0 \Delta T$$. Volume: $$\Delta V = \gamma V_0 \Delta T$$. $$\gamma = 3\alpha$$ (isotropic solids)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Calorimetry</h4>
+                            <p>$$Q = mc\Delta T$$. Latent heat: $$Q = mL$$. Principle of calorimetry: Heat lost = Heat gained</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Laws of Thermodynamics</h4>
+                            <p>Zeroth: Thermal equilibrium. First: $$\Delta U = Q - W$$. Second: Heat cannot flow from cold to hot spontaneously. Third: $$S \to 0$$ as $$T \to 0$$ K</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Carnot Engine</h4>
+                            <p>Maximum efficiency: $$\eta = 1 - \frac{T_C}{T_H}$$. COP (refrigerator) = $$\frac{T_C}{T_H-T_C}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Kinetic Theory</h4>
+                            <p>$$v_{rms} = \sqrt{\frac{3RT}{M}}$$, $$\bar{v} = \sqrt{\frac{8RT}{\pi M}}$$, $$v_p = \sqrt{\frac{2RT}{M}}$$. $$U = \frac{f}{2}nRT$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Specific Heats</h4>
+                            <p>$$C_P - C_V = R$$. $$\gamma = \frac{C_P}{C_V} = 1 + \frac{2}{f}$$. Monoatomic: $$f=3$$, Diatomic: $$f=5$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 13: Oscillations</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>SHM Equations</h4>
+                            <p>$$x = A\sin(\omega t + \phi)$$, $$v = A\omega\cos(\omega t + \phi)$$, $$a = -A\omega^2\sin(\omega t + \phi) = -\omega^2 x$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Energy in SHM</h4>
+                            <p>$$TE = \frac{1}{2}m\omega^2A^2 = \frac{1}{2}kA^2$$. $$KE_{avg} = PE_{avg} = \frac{1}{2}TE = \frac{1}{4}kA^2$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Time Periods</h4>
+                            <p>Spring: $$T = 2\pi\sqrt{\frac{m}{k}}$$. Simple pendulum: $$T = 2\pi\sqrt{\frac{L}{g}}$$. Physical pendulum: $$T = 2\pi\sqrt{\frac{I}{mgd}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Superposition</h4>
+                            <p>Same direction, same $$\omega$$: resultant SHM with same $$\omega$$. Perpendicular SHMs: Lissajous figures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 14: Waves</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Wave Speed & Equation</h4>
+                            <p>$$v = f\lambda = \frac{\lambda}{T}$$. String: $$v = \sqrt{\frac{T}{\mu}}$$. Sound: $$v = \sqrt{\frac{\gamma RT}{M}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Standing Waves</h4>
+                            <p>String fixed at both ends: $$f_n = \frac{nv}{2L}$$. Open pipe: $$f_n = \frac{nv}{2L}$$. Closed pipe: $$f_n = \frac{nv}{4L}$$ (odd n)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Doppler Effect</h4>
+                            <p>$$f' = f\frac{v \pm v_o}{v \mp v_s}$$. Upper sign for observer moving toward source, lower for away.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Beats & Intensity</h4>
+                            <p>$$f_{beat} = |f_1 - f_2|$$. $$I = \frac{P}{4\pi r^2}$$. $$\beta = 10\log\frac{I}{I_0}$$ dB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-1: Electric Charges and Fields</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Coulomb's Law</h4>
+                            <p>$$F = \frac{1}{4\pi\varepsilon_0}\frac{q_1q_2}{r^2}$$, $$\frac{1}{4\pi\varepsilon_0} = 9 \times 10^9$$ Nm²/C²</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Electric Field</h4>
+                            <p>Point charge: $$E = \frac{kQ}{r^2}$$. Dipole: axial $$E = \frac{2kp}{r^3}$$, equatorial $$E = \frac{kp}{r^3}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Torque & Potential Energy of Dipole</h4>
+                            <p>$$\tau = pE\sin\theta$$. $$U = -pE\cos\theta$$. Stable equilibrium at $$\theta = 0$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Gauss's Law</h4>
+                            <p>$$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{enc}}{\varepsilon_0}$$. Infinite plane sheet: $$E = \frac{\sigma}{2\varepsilon_0}$$. Conducting sphere outside: $$E = \frac{Q}{4\pi\varepsilon_0 r^2}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-2: Electrostatic Potential</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Potential & Work</h4>
+                            <p>$$V = \frac{kQ}{r}$$. Dipole: $$V = \frac{kp\cos\theta}{r^2}$$. $$W_{ext} = q\Delta V$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Relation Between E and V</h4>
+                            <p>$$E = -\frac{dV}{dr}$$. $$V_B - V_A = -\int_A^B \vec{E} \cdot d\vec{r}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Capacitance</h4>
+                            <p>$$C = \frac{Q}{V}$$. Parallel plate: $$C = \frac{\varepsilon_0 A}{d}$$. With dielectric: $$C = \frac{K\varepsilon_0 A}{d}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Capacitor Combinations & Energy</h4>
+                            <p>Series: $$\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2}$$. Parallel: $$C = C_1 + C_2$$. Energy: $$U = \frac{1}{2}CV^2 = \frac{Q^2}{2C}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Force on Dielectric</h4>
+                            <p>When battery connected: constant V. When isolated: constant Q. Energy changes accordingly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-3: Current Electricity</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Ohm's Law & Resistance</h4>
+                            <p>$$V = IR$$, $$R = \rho\frac{L}{A}$$, $$J = \sigma E$$. Drift velocity: $$v_d = \frac{eE\tau}{m} = \frac{I}{nAe}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Combination of Resistors</h4>
+                            <p>Series: $$R = R_1 + R_2 + \cdots$$. Parallel: $$\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Kirchhoff's Laws</h4>
+                            <p>Junction: $$\sum I_{in} = \sum I_{out}$$. Loop: $$\sum IR + \sum EMF = 0$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Wheatstone Bridge & Meter Bridge</h4>
+                            <p>Balanced: $$\frac{P}{Q} = \frac{R}{S}$$. Meter bridge: $$\frac{R}{S} = \frac{l}{100-l}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Potentiometer</h4>
+                            <p>$$\frac{E_1}{E_2} = \frac{l_1}{l_2}$$. Internal resistance: $$r = R\left(\frac{l_1}{l_2}-1\right)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Electrical Power</h4>
+                            <p>$$P = VI = I^2R = \frac{V^2}{R}$$. Power in series/parallel combinations based on resistance ratios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-4 & 5: Magnetism</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Biot-Savart & Ampère</h4>
+                            <p>Wire: $$B = \frac{\mu_0 I}{2\pi r}$$. Loop center: $$B = \frac{\mu_0 I}{2R}$$. Solenoid: $$B = \mu_0 nI$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Force on Moving Charge</h4>
+                            <p>$$F = q(\vec{v} \times \vec{B})$$, magnitude $$qvB\sin\theta$$. Cyclotron: $$r = \frac{mv}{qB}$$, $$T = \frac{2\pi m}{qB}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Torque on Current Loop</h4>
+                            <p>$$\tau = NIAB\sin\theta = MB\sin\theta$$. Magnetic moment: $$M = NIA$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Moving Coil Galvanometer</h4>
+                            <p>$$\tau = NIAB = k\theta$$. Current sensitivity: $$\frac{\theta}{I} = \frac{NAB}{k}$$. Voltage sensitivity: $$\frac{\theta}{V} = \frac{NAB}{kR}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Bar Magnet & Earth</h4>
+                            <p>Axial: $$B = \frac{\mu_0}{4\pi}\frac{2M}{r^3}$$. Equatorial: $$B = \frac{\mu_0}{4\pi}\frac{M}{r^3}$$. $$\tan\delta = \frac{B_V}{B_H}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-6: Electromagnetic Induction</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Faraday's & Lenz's Law</h4>
+                            <p>$$\mathcal{E} = -\frac{d\Phi_B}{dt}$$. Lenz: induced current opposes change in flux. Motional EMF: $$\mathcal{E} = Blv$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Self & Mutual Inductance</h4>
+                            <p>$$\mathcal{E} = -L\frac{dI}{dt}$$. Solenoid: $$L = \mu_0 n^2 Al$$. $$M = \frac{\mu_0 N_1 N_2 A}{l}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Energy in Inductor</h4>
+                            <p>$$U = \frac{1}{2}LI^2$$. Energy density: $$u = \frac{B^2}{2\mu_0}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Growth & Decay of Current in LR</h4>
+                            <p>Growth: $$I = I_0(1-e^{-t/\tau})$$. Decay: $$I = I_0 e^{-t/\tau}$$. $$\tau = L/R$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-7: Alternating Current</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>AC Circuit Parameters</h4>
+                            <p>$$X_L = \omega L$$, $$X_C = \frac{1}{\omega C}$$, $$Z = \sqrt{R^2 + (X_L-X_C)^2}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Phase & Power</h4>
+                            <p>$$\tan\phi = \frac{X_L-X_C}{R}$$. Power: $$P = V_{rms}I_{rms}\cos\phi$$. Power factor = $$\cos\phi = \frac{R}{Z}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Resonance</h4>
+                            <p>$$\omega_0 = \frac{1}{\sqrt{LC}}$$, $$f_0 = \frac{1}{2\pi\sqrt{LC}}$$. At resonance: $$Z = R$$, $$\cos\phi = 1$$, current max</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Quality Factor & Transformer</h4>
+                            <p>$$Q = \frac{\omega_0 L}{R} = \frac{1}{\omega_0 CR} = \frac{\omega_0}{\Delta\omega}$$. Transformer: $$\frac{V_s}{V_p} = \frac{N_s}{N_p} = \frac{I_p}{I_s}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>LCR at Resonance (Bandwidth)</h4>
+                            <p>Bandwidth = $$\Delta\omega = \frac{R}{L}$$. Sharpness of resonance ∝ Q factor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-8: Electromagnetic Waves</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Maxwell's Equations & Displacement Current</h4>
+                            <p>$$I_D = \varepsilon_0\frac{d\Phi_E}{dt}$$. Ampère-Maxwell: $$\oint B \cdot dl = \mu_0(I_C + I_D)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>EM Wave Properties</h4>
+                            <p>$$c = \frac{1}{\sqrt{\mu_0\varepsilon_0}} = 3 \times 10^8$$ m/s. $$E_0 = cB_0$$. Energy: $$u = \frac{1}{2}\varepsilon_0 E^2 + \frac{B^2}{2\mu_0}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Intensity & Momentum</h4>
+                            <p>$$I = \frac{1}{2}\varepsilon_0 c E_0^2 = \frac{cB_0^2}{2\mu_0}$$. Momentum: $$p = \frac{U}{c}$$. Radiation pressure = $$\frac{I}{c}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-9: Ray Optics</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Mirror & Lens Formula</h4>
+                            <p>$$\frac{1}{f} = \frac{1}{v} + \frac{1}{u}$$. Magnification: $$m = \frac{v}{u} = \frac{f}{f-u}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Refraction & Snell's Law</h4>
+                            <p>$$n_1\sin i = n_2\sin r$$. Critical angle: $$\sin c = \frac{n_2}{n_1}$$ ($$n_1 > n_2$$). Apparent depth: $$d' = \frac{d}{n}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Lens Maker's Formula</h4>
+                            <p>$$\frac{1}{f} = (n-1)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$$. Power: $$P = \frac{1}{f}$$ (diopters when f in meters)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Prism</h4>
+                            <p>$$\mu = \frac{\sin\frac{A+\delta_m}{2}}{\sin\frac{A}{2}}$$. For thin prism: $$\delta = (\mu-1)A$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Microscope & Telescope</h4>
+                            <p>Compound microscope: $$m = \frac{v_o}{u_o}\left(1+\frac{D}{f_e}\right)$$. Astronomical telescope: $$m = \frac{f_o}{f_e}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-10: Wave Optics</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Interference</h4>
+                            <p>YDSE: fringe width $$\beta = \frac{\lambda D}{d}$$. Path diff = $$n\lambda$$ → bright; $$(2n+1)\frac{\lambda}{2}$$ → dark</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Diffraction (Single Slit)</h4>
+                            <p>Minima: $$a\sin\theta = n\lambda$$. Maxima: $$a\sin\theta = (2n+1)\frac{\lambda}{2}$$. Central max width = $$\frac{2\lambda D}{a}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Polarization & Resolving Power</h4>
+                            <p>Brewster: $$\tan i_B = n$$. Malus: $$I = I_0\cos^2\theta$$. RP (microscope): $$\frac{2\mu\sin\theta}{\lambda}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Thin Film & Coherence</h4>
+                            <p>Constructive: $$2\mu t\cos r = (2n+1)\frac{\lambda}{2}$$. Destructive: $$2\mu t\cos r = n\lambda$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-11: Dual Nature</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Photoelectric Effect</h4>
+                            <p>$$KE_{max} = h\nu - \phi = eV_0$$. Threshold: $$\nu_0 = \frac{\phi}{h}$$. Intensity ∝ photon flux, not KE</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>de Broglie Wavelength</h4>
+                            <p>$$\lambda = \frac{h}{p} = \frac{h}{mv}$$. For electron accelerated by V: $$\lambda = \frac{h}{\sqrt{2meV}} = \frac{1.227}{\sqrt{V}}$$ nm</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Davisson-Germer & Matter Waves</h4>
+                            <p>Confirmed wave nature of electrons. Bragg's law: $$2d\sin\theta = n\lambda$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-12: Atoms</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Bohr's Postulates & Energy</h4>
+                            <p>$$mvr = n\frac{h}{2\pi}$$. $$r_n = 0.529\frac{n^2}{Z}$$ Å. $$E_n = -13.6\frac{Z^2}{n^2}$$ eV</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Spectral Lines</h4>
+                            <p>$$rac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$$. Lyman (UV), Balmer (visible), Paschen (IR)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Ionization & Excitation</h4>
+                            <p>Ionization energy (H) = 13.6 eV. Excitation energy = $$13.6\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$$ eV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-13: Nuclei</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Nuclear Properties</h4>
+                            <p>Radius: $$R = R_0 A^{1/3}$$ ($$R_0 = 1.2$$ fm). Density ≈ constant ($$\sim 10^{17}$$ kg/m³)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Binding Energy</h4>
+                            <p>$$BE = \Delta m \cdot c^2$$. BE per nucleon max at Fe-56 ($$\approx 8.8$$ MeV). Fission: heavy nuclei split. Fusion: light nuclei combine</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Radioactive Decay</h4>
+                            <p>$$N = N_0 e^{-\lambda t}$$. $$t_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{\lambda}$$. Mean life $$\tau = \frac{1}{\lambda} = 1.44 t_{1/2}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Activity</h4>
+                            <p>$$A = \lambda N$$. 1 Curie = $$3.7 \times 10^{10}$$ Bq. 1 Rutherford = $$10^6$$ Bq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-14: Semiconductors</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Semiconductor Basics</h4>
+                            <p>$$n_i = \sqrt{n_e n_h}$$. In intrinsic: $$n_e = n_h = n_i$$. Conductivity: $$\sigma = e(n_e\mu_e + n_h\mu_h)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>p-n Junction</h4>
+                            <p>Forward bias: depletion width ↓, resistance ↓, current flows easily. Reverse bias: opposite. Barrier potential ≈ 0.3 V (Ge), 0.7 V (Si)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Diode & Rectifier</h4>
+                            <p>Half-wave: $$\eta = \frac{0.406}{1 + \frac{r_f}{R_L}}$$. Full-wave: $$\eta = \frac{0.812}{1 + \frac{r_f}{R_L}}$$. Ripple factor: HW=1.21, FW=0.48</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Transistor</h4>
+                            <p>Current gain: $$\beta = \frac{I_C}{I_B}$$. $$\alpha = \frac{I_C}{I_E}$$. Relation: $$\beta = \frac{\alpha}{1-\alpha}$$. In active region: emitter forward, collector reverse biased</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Logic Gates</h4>
+                            <p>NAND and NOR are universal gates. De Morgan's: $$\overline{A+B} = \bar{A} \cdot \bar{B}$$, $$\overline{A \cdot B} = \bar{A} + \bar{B}$$</p>
                         </div>
                     </div>
                 </div>
@@ -1986,6 +3136,529 @@
                         <div class="formula-item">
                             <h4>Biomolecules, Polymers & Chemistry in Life</h4>
                             <p>Reducing sugars: free aldehyde/ketone group (glucose, fructose, maltose). DNA: double helix, A-T (2 H-bonds), G-C (3 H-bonds). Buna-S is copolymer of butadiene + styrene</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 1: Some Basic Concepts</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Mole Concept</h4>
+                            <p>$$n = \frac{m}{M} = \frac{N}{N_A} = \frac{V}{V_m}$$ (at STP). $$N_A = 6.022 \times 10^{23}$$ mol⁻¹</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Molarity, Molality & Mole Fraction</h4>
+                            <p>$$M = \frac{n}{V(L)}$$, $$m = \frac{n}{\text{kg solvent}}$$, $$X_A = \frac{n_A}{n_{total}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Empirical & Molecular Formula</h4>
+                            <p>Molecular formula = n × Empirical formula. $$n = \frac{\text{Molar mass}}{\text{Empirical formula mass}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Limiting Reagent</h4>
+                            <p>Find moles/coefficient for each reactant. Smallest value = limiting reagent.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Concentration Relationships</h4>
+                            <p>$$M = \frac{10 \times d \times \%}{M_{solute}}$$. $$\frac{1}{m} = \frac{d}{M} - \frac{M_{solute}}{1000}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 2: Structure of Atom</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Photoelectric & de Broglie</h4>
+                            <p>$$E = h\nu = \frac{hc}{\lambda}$$. $$\lambda = \frac{h}{mv} = \frac{h}{\sqrt{2mKE}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Rydberg & Bohr</h4>
+                            <p>$$
+                            \frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$$. $$r_n = 0.529\frac{n^2}{Z}$$ Å. $$E_n = -13.6\frac{Z^2}{n^2}$$ eV</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Heisenberg Uncertainty</h4>
+                            <p>$$\Delta x \cdot \Delta p \geq \frac{h}{4\pi}$$. $$\Delta E \cdot \Delta t \geq \frac{h}{4\pi}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Quantum Numbers</h4>
+                            <p>$$n = 1,2,3...$$, $$l = 0$$ to $$(n-1)$$, $$m = -l$$ to $$+l$$, $$s = \pm\frac{1}{2}$$. Max e⁻ in shell = $$2n^2$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Nodes</h4>
+                            <p>Radial nodes = $$n - l - 1$$. Angular nodes = $$l$$. Total nodes = $$n - 1$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 3: Classification of Elements</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Periodic Trends</h4>
+                            <p>Radius: ↓ across period, ↑ down group. IE: ↑ across, ↓ down (exceptions: Group 15, d-block contraction)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Effective Nuclear Charge</h4>
+                            <p>$$Z_{eff} = Z - \sigma$$ (Slater's rules). Shielding: s > p > d > f for same n</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Diagonal Relationship</h4>
+                            <p>Li ↔ Mg, Be ↔ Al, B ↔ Si. Similar ionic size/polarizing power cause similar properties.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Electronegativity Scales</h4>
+                            <p>Pauling: based on bond energies. Mulliken: $$\frac{IE + EA}{2}$$. Alfred-Rochow: based on effective nuclear charge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 4: Chemical Bonding</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>VSEPR & Hybridization</h4>
+                            <p>$$AX_2$$: sp, linear. $$AX_3$$: sp², trigonal planar. $$AX_4$$: sp³, tetrahedral. $$AX_5$$: sp³d. $$AX_6$$: sp³d²</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Dipole Moment</h4>
+                            <p>$$\mu = q \times d$$. % ionic character = $$\frac{\mu_{obs}}{\mu_{ionic}} \times 100$$. Symmetric molecules: μ = 0</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Bond Order (MOT)</h4>
+                            <p>$$BO = \frac{N_b - N_a}{2}$$. If BO > 0, molecule stable. Higher BO → shorter bond, higher BE</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Fajan's Rules</h4>
+                            <p>Cation polarizing power ↑ with charge ↑ and size ↓. Anion polarizability ↑ with size ↑ and charge ↑</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Hydrogen Bonding</h4>
+                            <p>Requires H bonded to F, O, or N. Intermolecular H-bonding ↑ bp (H₂O, HF, NH₃). Intramolecular ↓ bp (o-nitrophenol)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 5: States of Matter</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Gas Laws</h4>
+                            <p>$$PV = nRT$$. $$\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}$$. $$d = \frac{PM}{RT}$$. Dalton: $$P_{total} = \sum P_i$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Kinetic Theory</h4>
+                            <p>$$KE_{avg} = \frac{3}{2}k_BT$$ per molecule. $$u_{rms} = \sqrt{\frac{3RT}{M}}$$. Graham: $$\frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>van der Waals</h4>
+                            <p>$$\left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT$$. $$a$$: intermolecular attraction. $$b$$: co-volume (excluded volume)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Compressibility Factor</h4>
+                            <p>$$Z = \frac{PV}{nRT}$$. Ideal gas: Z = 1. Real gas: Z ≠ 1. At low P: Z = 1 - a/RTV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 6: Thermodynamics</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>First Law</h4>
+                            <p>$$\Delta U = q + w$$ (IUPAC: w = work done ON system). $$\Delta H = \Delta U + \Delta n_g RT$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Hess's Law</h4>
+                            <p>$$\Delta H_{total} = \sum \Delta H_{steps}$$. Independent of path. Used to find enthalpies of formation.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Entropy & Gibbs Energy</h4>
+                            <p>$$\Delta S = \frac{q_{rev}}{T}$$. $$\Delta G = \Delta H - T\Delta S$$. Spontaneous if $$\Delta G < 0$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Standard Enthalpies</h4>
+                            <p>Formation: $$\Delta H_f°$$ (elements in standard state = 0). Combustion: $$\Delta H_c°$$. Neutralization: $$-57.1$$ kJ/mol (strong acid+base)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Bond Enthalpy</h4>
+                            <p>$$\Delta H = \sum BE_{reactants} - \sum BE_{products}$$. Average bond enthalpy for diatomic = exact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 7: Equilibrium</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Equilibrium Constant</h4>
+                            <p>$$K_p = K_c(RT)^{\Delta n}$$. Pure solids/liquids omitted. $$\Delta n = \text{moles gaseous products} - \text{moles gaseous reactants}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Reaction Quotient</h4>
+                            <p>$$Q_c = \frac{[Products]}{[Reactants]}$$. If Q < K: forward. Q > K: backward. Q = K: equilibrium.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Le Chatelier's Principle</h4>
+                            <p>System opposes change: ↑ concentration → shifts to consume it. ↑ pressure → shifts to fewer moles. ↑ T → shifts to endothermic side.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>pH & pOH</h4>
+                            <p>$$pH = -\log[H^+]$$, $$pOH = -\log[OH^-]$$. $$pH + pOH = 14$$ (at 25°C). $$K_w = 10^{-14}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Weak Acid & Base</h4>
+                            <p>$$K_a = \frac{C\alpha^2}{1-\alpha} \approx C\alpha^2$$ (if α << 1). $$[H^+] = \sqrt{K_a \cdot C}$$. $$pH = \frac{1}{2}(pK_a - \log C)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Hydrolysis & Buffer</h4>
+                            <p>$$pH = 7 + \frac{1}{2}(pK_a + \log C)$$ (salt of WA + SB). Henderson: $$pH = pK_a + \log\frac{[salt]}{[acid]}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 8: Redox Reactions</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Oxidation Number Rules</h4>
+                            <p>O = -2 (peroxide: -1, OF₂: +2). H = +1 (metal hydrides: -1). Group 1 = +1, Group 2 = +2. F = -1 always.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Equivalent Weight</h4>
+                            <p>$$E = \frac{M}{n}$$ where n = no. of e⁻ transferred. Normality = n × Molarity</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Balancing Redox</h4>
+                            <p>Ion-electron method: balance atoms, then O (using H₂O), then H (using H⁺), then charge (using e⁻). Acidic medium: H⁺, H₂O. Basic: OH⁻, H₂O</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 10: s-Block Elements</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Trends & Anomalies</h4>
+                            <p>IE: Li > Na > K > Rb > Cs. Be > Mg > Ca > Sr > Ba. Hydration energy: Li⁺ > Na⁺ > K⁺ (small size)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Solubility</h4>
+                            <p>Hydroxides: solubility increases down group. Carbonates/sulphates: solubility decreases down group (except Be).</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Flame Test Colors</h4>
+                            <p>Li: crimson red, Na: yellow, K: lilac, Ca: brick red, Sr: crimson, Ba: apple green</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Important Compounds</h4>
+                            <p>Plaster of Paris: CaSO₄·½H₂O. Dead burnt plaster: CaSO₄. Epsom salt: MgSO₄·7H₂O. Sorel's cement: MgCl₂ + MgO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📘</span> Ch 11: p-Block (Groups 13-14)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Boron & Aluminium</h4>
+                            <p>B(OH)₃ is acidic (Lewis acid). AlCl₃ dimerizes in non-polar solvents. Al forms [AlF₆]³⁻ but B forms [BF₄]⁻ only.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Inert Pair Effect</h4>
+                            <p>Stability of ns² electrons increases down group. Tl⁺ > Tl³⁺, Pb²⁺ > Pb⁴⁺. Ga > Al in IE (d-block contraction)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Carbon & Silicon</h4>
+                            <p>Catenation: C >> Si > Ge. CO is neutral oxide, CO₂ acidic. SiO₂ is network solid (3D). Silicates: ortho SiO₄⁴⁻, pyro Si₂O₇⁶⁻</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Important Reactions</h4>
+                            <p>Borax bead test for metal ions. Al in aq. NaOH: 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂. Silicates form zeolites (use as molecular sieves)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-1: Solid State</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Packing Efficiency</h4>
+                            <p>Simple cubic: 52.4%. BCC: 68%. FCC/HCP: 74%. Coordination numbers: SC=6, BCC=8, FCC=12</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Density of Crystal</h4>
+                            <p>$$d = \frac{Z \times M}{a^3 \times N_A}$$. Z = atoms per unit cell. For FCC: Z=4, BCC: Z=2, SC: Z=1</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Radius Relations</h4>
+                            <p>SC: $$r = \frac{a}{2}$$. BCC: $$r = \frac{\sqrt{3}a}{4}$$. FCC: $$r = \frac{a}{2\sqrt{2}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Voids</h4>
+                            <p>Tetrahedral voids = 2N, Octahedral voids = N. Radius ratio: tetrahedral = 0.225, octahedral = 0.414</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Bragg's Equation</h4>
+                            <p>$$n\lambda = 2d\sin\theta$$. Used to determine crystal structure by X-ray diffraction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-2: Solutions</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Raoult's Law</h4>
+                            <p>For volatile: $$P = x_1P_1° + x_2P_2°$$. For non-volatile solute: $$\frac{P°-P}{P°} = x_2$$ (relative lowering of VP)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Colligative Properties</h4>
+                            <p>$$\Delta T_b = iK_b m$$, $$\Delta T_f = iK_f m$$, $$\pi = iMRT$$. van't Hoff factor: $$i = \frac{\text{observed value}}{\text{normal value}}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Molar Mass from Colligative</h4>
+                            <p>$$M_2 = \frac{K_b \times w_2 \times 1000}{\Delta T_b \times w_1}$$. For dissociation: $$i = 1 + (n-1)\alpha$$. Association: $$i = 1 - \left(1-\frac{1}{n}\right)\alpha$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Henry's Law</h4>
+                            <p>$$p = K_H \cdot x$$. Higher $$K_H$$ → lower gas solubility. Valid at moderate pressure and low temperature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-3: Electrochemistry</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Nernst Equation</h4>
+                            <p>$$E = E° - \frac{RT}{nF}\ln Q = E° - \frac{0.0591}{n}\log Q$$ (at 298K)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Cell EMF & Gibbs</h4>
+                            <p>$$E°_{cell} = E°_{cathode} - E°_{anode}$$. $$\Delta G = -nFE$$. $$\Delta G° = -nFE° = -RT\ln K$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Conductivity</h4>
+                            <p>$$\Lambda_m = \frac{\kappa \times 1000}{M}$$, $$\Lambda_{eq} = \frac{\kappa \times 1000}{N}$$. Kohlrausch: $$\Lambda°_m = \nu_+\lambda°_+ + \nu_-\lambda°_-$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Degree of Dissociation</h4>
+                            <p>$$\alpha = \frac{\Lambda_m}{\Lambda°_m}$$. Ostwald: $$K_a = \frac{C\alpha^2}{1-\alpha}$$. For weak electrolyte at infinite dilution: $$\alpha \to 1$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Faraday's Laws</h4>
+                            <p>$$m = ZIt = \frac{MIt}{nF}$$. $$1F = 96500$$ C. Equivalent weight = Molar mass/n-factor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-4: Chemical Kinetics</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Rate Laws</h4>
+                            <p>Zero order: $$[A] = [A]_0 - kt$$, $$t_{1/2} = \frac{[A]_0}{2k}$$. First order: $$\ln[A] = \ln[A]_0 - kt$$, $$t_{1/2} = \frac{0.693}{k}$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Second Order</h4>
+                            <p>$$\frac{1}{[A]} = \frac{1}{[A]_0} + kt$$. $$t_{1/2} = \frac{1}{k[A]_0}$$. Units: zero=M/s, first=s⁻¹, second=M⁻¹s⁻¹</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Arrhenius Equation</h4>
+                            <p>$$k = Ae^{-E_a/RT}$$. $$\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)$$</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Molecularity vs Order</h4>
+                            <p>Molecularity = number of reactant molecules in elementary step. Order = experimentally determined exponents sum.</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Half-Life Relationships</h4>
+                            <p>Zero order: $$t_{1/2} \propto [A]_0$$. First order: $$t_{1/2}$$ independent. Second order: $$t_{1/2} \propto \frac{1}{[A]_0}$$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-7: p-Block (Groups 15-18)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Nitrogen Family</h4>
+                            <p>NH₃: strongest base (gas phase). HNO₃ is strong oxidizing agent. P₄ + NaOH → PH₃ + NaH₂PO₂. PCl₃: pyramidal, PCl₅: trigonal bipyramidal</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Oxygen Family</h4>
+                            <p>H₂SO₄: contact process (V₂O₅ catalyst). Oleum: H₂S₂O₇. H₂O₂: both oxidant and reductant. Ozone: diamagnetic, bent structure</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Halogens</h4>
+                            <p>Oxidizing power: F₂ > Cl₂ > Br₂ > I₂. HF weakest acid (H-bonding). ICl, IBr are interhalogen compounds. Xenon forms XeF₂, XeF₄, XeF₆, XeO₃, XeO₄</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Noble Gases</h4>
+                            <p>He: lowest bp. Rn: radioactive. Xe compounds possible due to low IE and large size. XeF₂ linear, XeF₄ square planar, XeF₆ distorted octahedral</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-8: d & f Block</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Lanthanide Contraction</h4>
+                            <p>Steady decrease in atomic/ionic size from La to Lu due to poor shielding by 4f e⁻. Consequences: Zr≈Hf, Nb≈Ta, Mo≈W</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Transition Metal Properties</h4>
+                            <p>Variable oxidation states due to comparable (n-1)d and ns energy. Color due to d-d transitions. Catalytic property due to variable oxidation states and surface area</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Important Compounds</h4>
+                            <p>KMnO₄: strong oxidant in acidic medium (Mn²⁺), neutral (MnO₂), alkaline (MnO₄²⁻). K₂Cr₂O₇: orange, strong oxidant in acidic medium (Cr³⁺)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Magnetic Moment</h4>
+                            <p>Spin only: $$\mu = \sqrt{n(n+2)}$$ BM. If observed > calculated: orbital contribution present.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-9: Coordination Compounds</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>Werner's Theory</h4>
+                            <p>Primary valency = oxidation state (ionizable). Secondary valency = coordination number (non-ionizable, directional)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>EAN Rule</h4>
+                            <p>$$EAN = Z - x + 2n$$. For stability, EAN = 36 (Kr), 54 (Xe), 86 (Rn). Example: [Fe(CN)₆]⁴⁻ EAN = 26 - 2 + 12 = 36</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Crystal Field Theory</h4>
+                            <p>Octahedral: $$\Delta_o$$. Tetrahedral: $$\Delta_t = \frac{4}{9}\Delta_o$$. Strong field (CN⁻, CO, NO₂⁻): low spin. Weak field (H₂O, F⁻, Cl⁻): high spin</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Isomerism</h4>
+                            <p>[Ma₃b₃]: fac and mer. [M(AA)₂b₂]: cis-trans, optically active only for cis. [Mabcd]: optical isomerism in tetrahedral</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-card">
+                <div class="topic-header" onclick="toggleTopic(this)">
+                    <h2><span class="topic-icon">📗</span> Ch 12-10 to 13: Organic Reactions</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="topic-content">
+                    <div class="formula-grid">
+                        <div class="formula-item">
+                            <h4>SN1 vs SN2</h4>
+                            <p>SN1: 3° > 2° > 1°, carbocation, polar protic solvent, two steps. SN2: 1° > 2° > 3°, inversion, polar aprotic, one step</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Elimination vs Substitution</h4>
+                            <p>E1: 3° > 2°, carbocation. E2: anti-periplanar geometry. E1cb: with β-carbonyl. Bulky base favors elimination</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Carbonyl Reactions</h4>
+                            <p>Aldehydes more reactive than ketones (steric + electronic). Tollens': Ag⁺ → Ag mirror (aldehydes only). Fehling's: Cu²⁺ → Cu₂O red (aliphatic aldehydes)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Amines Basicity</h4>
+                            <p>Gas phase: 2° > 3° > 1° > NH₃. Aqueous: 2° > 1° > 3° > NH₃ (solvation effect). Aniline < NH₃ (resonance delocalization of lone pair)</p>
+                        </div>
+                        <div class="formula-item">
+                            <h4>Tests & Reagents</h4>
+                            <p>2,4-DNP: test for carbonyls. Schiff's base: pink for aldehydes. Carbylamine: 1° amine → foul smell. Hinsberg: distinguishes 1°, 2°, 3° amines</p>
                         </div>
                     </div>
                 </div>
